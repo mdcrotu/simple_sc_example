@@ -1,8 +1,15 @@
-# simple_sc_example
+# simple_sc_examples
 
-## A simple SystemC example to make sure your SystemC is installed correctly.
+## Simple SystemC examples to make sure your SystemC is installed correctly.
 
+### Makefile-based Example
 #### To run:
 make all
 
 ./simple
+
+
+### CMake-based Example
+mkdir build
+cd build
+cmake
