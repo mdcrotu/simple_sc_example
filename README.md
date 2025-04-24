@@ -5,14 +5,16 @@
 ```{bash}
 cd makefile-based
 make all
-./simple
+./first_systemc
 ```
 
 ### CMake-based Example
 ```{bash}
 cd cmake-based
+source source.me
 mkdir build
 cd build
-cmake
+cmake ..
+make
 ./first_systemc
 ```
