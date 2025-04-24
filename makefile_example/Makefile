@@ -41,10 +41,10 @@ endif
 ## ***************************************************************************
 ## build rules
 
-all: clean simple
+all: clean first_systemc
 
-simple: simple.cpp
+first_systemc: main.cpp
 	g++ $(CXXFLAGS) $(LDFLAGS) $(LIBS) -o $@ $<
 
 clean:
-	rm -f simple
+	rm -f first_systemc
