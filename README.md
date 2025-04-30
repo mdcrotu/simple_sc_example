@@ -67,3 +67,23 @@ gmake install
 ```{bash}
 git clone https://github.com/accellera-official/systemc
 ```
+
+
+## UVM-SystemC Installation Instructions
+
+#### Download UVM-SystemC from the Accellera "Drafts Under Public Review" page:
+https://www.accellera.org/downloads/drafts-review
+###### untar it for installation
+
+### Build Instructions:
+```{bash}
+export CXX=/usr/bin/g++
+mkdir objdir
+cd objdir
+# Set the prefix to where you want it installed and select the SystemC version to use
+../configure --with-systemc=$HOME/Tools/Accellera/SystemC/systemc/2.3.3 --prefix=$HOME/Tools/Accellera/UVM/uvm-systemc/systemc-2.3.3/1.0-beta5
+gmake
+make check # optional: run tests
+gmake install
+```
+
